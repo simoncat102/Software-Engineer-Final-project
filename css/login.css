@@ -100,17 +100,16 @@ body {
 
 .btn-login {
   color: #fff;
-	background-color: #f23e3e;
+	background-color: #ff6a6a;
+  border-radius: 20px;
 }
 .btn-login:focus {
   color: #fff;
   background-color: #286090;
-  border-color: #122b40;
 }
 .btn-login:hover {
   color: #fff;
   background-color: #286090;
-  border-color: #204d74;
 }
 /* .btn-primary.active {
 

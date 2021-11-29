@@ -35,156 +35,149 @@
   </head>
 
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">機票查詢系統</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >查詢首頁 <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">即時動態</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">管理機票</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="loginView.html">註冊/登入</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light nav-header">
+      <div class="container">
+        <a class="navbar-brand" href="#">機票查詢系統</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >查詢首頁 <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">即時動態</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">管理機票</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="loginView.html">註冊/登入</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <div id="booking" class="section">
-        <div class="section-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="booking-cta">
-                  <h1>即刻開始查詢機票</h1>
-                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam numquam at</p> -->
-                </div>
+      </div>
+    </nav>
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="booking-cta">
+                <h1>即刻開始查詢機票</h1>
               </div>
-              <div class="col-md-7 col-md-offset-1">
-                <div class="booking-form">
-                  <form>
-                    <div class="form-group">
-                      <div class="form-checkbox">
-                        <label for="roundtrip">
-                          <input
-                            type="radio"
-                            id="roundtrip"
-                            name="flight-type"
-                          />
-                          <span></span>來回
-                        </label>
-                        <label for="one-way">
-                          <input type="radio" id="one-way" name="flight-type" />
-                          <span></span>單程
-                        </label>
-                        <label for="multi-city">
-                          <input
-                            type="radio"
-                            id="multi-city"
-                            name="flight-type"
-                          />
-                          <span></span>轉機
-                        </label>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <div class="booking-form">
+                <form>
+                  <div class="form-group">
+                    <div class="form-checkbox">
+                      <label for="roundtrip">
+                        <input type="radio" id="roundtrip" name="flight-type" />
+                        <span></span>來回
+                      </label>
+                      <label for="one-way">
+                        <input type="radio" id="one-way" name="flight-type" />
+                        <span></span>單程
+                      </label>
+                      <label for="multi-city">
+                        <input
+                          type="radio"
+                          id="multi-city"
+                          name="flight-type"
+                        />
+                        <span></span>轉機
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="form-label">出發地</span>
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="輸入城市或機場名"
+                        />
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <span class="form-label">出發地</span>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="輸入城市或機場名"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <span class="form-label">目的地</span>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="輸入城市或機場名"
-                          />
-                        </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="form-label">目的地</span>
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="輸入城市或機場名"
+                        />
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <span class="form-label">出發時間</span>
-                          <input class="form-control" type="date" required />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <span class="form-label">回程時間</span>
-                          <input class="form-control" type="date" required />
-                        </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="form-label">出發時間</span>
+                        <input class="form-control" type="date" required />
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <span class="form-label">成人</span>
-                          <select class="form-control">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                          </select>
-                          <span class="select-arrow"></span>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <span class="form-label">小孩</span>
-                          <select class="form-control">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                          </select>
-                          <span class="select-arrow"></span>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <span class="form-label">航班等級</span>
-                          <select class="form-control">
-                            <option>經濟艙</option>
-                            <option>商務艙</option>
-                            <option>頭等艙</option>
-                          </select>
-                          <span class="select-arrow"></span>
-                        </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="form-label">回程時間</span>
+                        <input class="form-control" type="date" required />
                       </div>
                     </div>
-                    <div class="form-btn">
-                      <button class="submit-btn">查詢</button>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <span class="form-label">成人</span>
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
                     </div>
-                  </form>
-                </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <span class="form-label">小孩</span>
+                        <select class="form-control">
+                          <option>0</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <span class="form-label">航班等級</span>
+                        <select class="form-control">
+                          <option>經濟艙</option>
+                          <option>商務艙</option>
+                          <option>頭等艙</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                    <button class="submit-btn">查詢</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
